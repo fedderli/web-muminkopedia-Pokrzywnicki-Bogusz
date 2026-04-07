@@ -1,0 +1,6 @@
+﻿@baseUrl = http://localhost:5004
+
+
+### get wsztstko
+GET {{baseUrl}}/
+Content-Type: application/json
