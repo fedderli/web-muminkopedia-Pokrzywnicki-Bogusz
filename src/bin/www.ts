@@ -1,9 +1,14 @@
 // Module dependencies.
 
+import dotenv from "dotenv";
+dotenv.config();
+
 import  app from '../app';
 import debug from 'debug';
 import http from 'http';
+import connectDB from '../config/db'
 
+connectDB();
 // Get port from environment and store in Express.
 const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);

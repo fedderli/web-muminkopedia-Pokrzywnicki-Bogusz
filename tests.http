@@ -2,5 +2,86 @@
 
 
 ### get wsztstko
-GET {{baseUrl}}/
+GET {{baseUrl}}/characters
 Content-Type: application/json
+
+
+### post dodaj posatac włóczykija
+POST {{baseUrl}}/characters
+Content-Type: application/json
+
+{
+  "name": "włóczykij",
+  "description": "samotny wędrowiec",
+  "species": "włóczykij",
+  "status": "w podroży",
+  "bestFriend": "Muminek",
+  "ownerOf": ["harmonijka","stary kapelusz", "stary płaszcz" ]
+}
+
+### post dodaj posatac Muminek
+POST {{baseUrl}}/characters
+Content-Type: application/json
+
+{
+  "name": "Muminek",
+  "description": "Główny bohater, niezwykle uprzejmy i ciekawy świata. Kocha przygody, ale najwyżej ceni bezpieczeństwo Domu Muminków.",
+  "species": "Muminek",
+  "status": "w Dolinie Muminków",
+  "bestFriend": "Włóczykij",
+  "ownerOf": ["kamień z dziurką", "scyzoryk", "pamiątkowa muszla"]
+}
+
+
+### post dodaj posatac Mała Mi
+POST {{baseUrl}}/characters
+Content-Type: application/json
+
+{
+  "name": "Mała Mi",
+  "description": "Niezależna i bezkompromisowa. Jest bardzo mała, ale ma ogromną osobowość – mówi zawsze to, co myśli, prosto w oczy.",
+  "species": "Mimbela",
+  "status": "rozrabia",
+  "bestFriend": "Muminek",
+  "ownerOf": ["srebrna szpilka", "imbryczek"]
+}
+
+
+### post dodaj posatac Ryjek
+POST {{baseUrl}}/characters
+Content-Type: application/json
+
+{
+  "name": "Ryjek",
+  "description": "Adoptowany brat Muminka. Jest lękliwy i materialistyczny – kocha wszystko, co błyszczy, jest drogie lub jadalne.",
+  "species": "Zwierzak",
+  "status": "marzy o skarbach",
+  "bestFriend": "Muminek",
+  "ownerOf": ["piesek Cedryk", "szklane kule", "pluszowy piesek"]
+}
+
+### post dodaj posatac Panna Migotka
+POST {{baseUrl}}/characters
+Content-Type: application/json
+
+{
+  "name": "Panna Migotka",
+  "description": "Bardzo dbająca o wygląd marzycielka. Pod wpływem silnych emocji zmienia kolor skóry.",
+  "species": "Migotka",
+  "status": "przymierza kwiaty",
+  "bestFriend": "Muminek",
+  "ownerOf": ["złota bransoletka na kostkę", "lusterko", "puder"]
+}
+
+### post dodaj posatac tatus muminka
+POST {{baseUrl}}/characters
+Content-Type: application/json
+
+{
+  "name": "Tatuś Muminka",
+  "description": "Wieczny marzyciel i poszukiwacz przygód. W wolnych chwilach pisze pamiętniki i buduje modele statków.",
+  "species": "Muminek",
+  "status": "pisze pamiętniki",
+  "bestFriend": "Pies Wyraz",
+  "ownerOf": ["czarny cylinder", "laska", "maszyna do pisania"]
+}
