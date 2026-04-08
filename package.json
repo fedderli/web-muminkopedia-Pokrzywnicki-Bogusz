@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./dist/bin/www",
     "dev": "tsx --watch ./src/bin/www.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "seed:artifacts": "ts-node src/seed/seedArtifacts.ts"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
