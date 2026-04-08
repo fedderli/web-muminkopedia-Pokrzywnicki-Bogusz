@@ -85,3 +85,15 @@ Content-Type: application/json
   "bestFriend": "Pies Wyraz",
   "ownerOf": ["czarny cylinder", "laska", "maszyna do pisania"]
 }
+
+### update character with id 69d67b0e3b2a8b7bc572588f
+PUT {{baseUrl}}/characters/69d67b0e3b2a8b7bc572588f
+Content-Type:  application/json
+
+{
+  "status": "w dolinie muminkow"
+}
+
+### delete character with id 69d6849be420cccefd019c17
+DELETE {{baseUrl}}/characters/69d6849be420cccefd019c17
+Content-Type: application/json
