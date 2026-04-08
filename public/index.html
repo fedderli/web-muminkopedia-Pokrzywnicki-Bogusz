@@ -1,13 +1,34 @@
 <html>
 
 <head>
-  <title>Express</title>
+  <title>Muminkopedia</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
-  <h1>Express</h1>
-  <p>Welcome to Express</p>
+  <h1>Muminkopedia – Katalog Przedmiotów</h1>
+
+  <div id="artifact-list">Ładowanie przedmiotów...</div>
+
+  <script>
+    const baseUrl = 'http://localhost:5004';
+
+    async function loadArtifacts() {
+      const res = await fetch(`${baseUrl}/artifacts`);
+      const artifacts = await res.json();
+
+      const container = document.getElementById('artifact-list');
+      container.innerHTML = artifacts.map(a => `
+        <div>
+          <h2>${a.name}</h2>
+          <p><strong>Właściciel:</strong> ${a.owner}</p>
+          <p>${a.propertyDescription}</p>
+        </div>
+      `).join('');
+    }
+
+    loadArtifacts();
+  </script>
 </body>
 
 </html>
